@@ -1,0 +1,794 @@
+/* @import url('https://fonts.googleapis.com/css2? oila = Roboto: wgh@300;400;500 & display=swap'); */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    /* border: 1px solid red; */
+    padding: 15px 10%;
+}
+
+.container_card {
+    display: flex;
+    align-items: center;
+}
+
+.card img {
+    margin: 0px 10px;
+}
+
+.card {
+    display: flex;
+    margin: 0px 25px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card p {
+    font-size: 16px;
+    color: #7885A3;
+}
+
+.app {
+    align-items: center;
+    cursor: pointer;
+}
+
+.app img {
+    margin: 0px 5px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    /* border: 1px solid red; */
+}
+
+.main_title ul {
+    display: flex;
+    align-items: center;
+}
+
+.main_title ul li {
+    list-style-type: none;
+    margin: 0px 15px;
+    position: relative;
+}
+
+.main_title ul li a {
+    text-decoration: none;
+    color: #25366A;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.main_title ul li a::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background: #0161FE;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+
+.main_title ul li a:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.main_button button {
+    width: 180px;
+    padding: 20px;
+    background: #0060FE;
+    border-radius: 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.main_button button:hover {
+    background: white;
+    border: 2px solid #0060FE;
+    color: #0060FE;
+    transition: 0.3s;
+}
+
+section {
+    background-image: url(https://online-mahalla.uz/media/store/img/online-mahlla-main.jpeg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    padding: 100px 10%;
+}
+
+.section_card h1 {
+    font-size: 50px;
+    color: white;
+}
+
+
+.section_card p {
+    color: white;
+    padding: 20px 0px;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+
+.section_button {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0px;
+}
+
+.section_button button {
+    width: 250px;
+    padding: 25px 0px;
+    background: #0060FE;
+    border-radius: 16px;
+    border: 2px solid #0060FE;
+    color: white;
+    cursor: pointer;
+}
+
+.section_button button:hover {
+    background: white;
+    border: 2px solid #0060FE;
+    color: #0060FE;
+    transition: 0.3s;
+}
+
+.biznes {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    padding: 30px 0px;
+
+}
+
+figure {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 10%;
+}
+
+.figure_card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.figure_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(237, 231, 231);
+    padding: 10px 10px;
+    height: 220px;
+
+}
+
+
+.left_icon {
+    display: flex;
+}
+
+.left_icon img:hover {
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.figure_text {
+    padding: 5px 20px;
+}
+
+.figure_text p {
+    font-size: 14px;
+    color: #6f767d;
+    padding: 15px 0px;
+}
+
+.qollab {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 48px;
+    font-size: 35px;
+    padding: 30px 0px;
+}
+
+.galerya {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 48px;
+    font-size: 35px;
+    padding: 40px 0px;
+}
+
+ol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 10%;
+}
+
+.oli_icon {
+    display: flex;
+}
+
+.ol_text p {
+    font-size: 14px;
+    color: #6f767d;
+    padding: 15px 0px;
+}
+
+.ol_text {
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.ol_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(237, 231, 231);
+    padding: 10px 10px;
+    height: 220px;
+}
+
+.ol_card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.oli_icon p:hover {
+    color: #0060FE;
+    transition: 0.3s;
+}
+
+.oli_icon img:hover {
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.galerya_p {
+    font-size: 14px;
+    color: #6f767d;
+    display: flex;
+    justify-content: center;
+}
+
+small {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 50%;
+}
+
+.small_two {
+    display: flex;
+}
+
+.small_second {
+    display: flex;
+}
+
+.axborot {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.axborot img {
+    width: 700px;
+}
+
+.axborot h2 {
+    padding: 30px 0;
+}
+
+.lerali {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.lerali button {
+    width: 250px;
+    padding: 25px 0px;
+    background: #0060FE;
+    border-radius: 16px;
+    border: none;
+    color: white;
+}
+
+.lerali p {
+    color: #0060FE;
+    font-size: 20px;
+    padding: 50px 0px;
+}
+
+.onlay_text {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.onlay_text h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 48px;
+    font-size: 35px;
+    padding: 10px 0px;
+}
+
+.onlay_text p {
+    font-size: 14px;
+    color: #6f767d;
+    line-height: 25px;
+    padding: 15px 0px;
+}
+
+.sum_p {
+    font-size: 14px;
+    color: #6f767d;
+    letter-spacing: 0.6px;
+    line-height: 21px;
+}
+
+details {
+    padding: 0px 10%;
+    text-align: center;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    cursor: pointer;
+}
+
+summary p {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+.sum_card p {
+    margin: 0px 20px;
+}
+
+.sum_card {
+    display: flex;
+    align-items: center;
+}
+
+.murojat {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.input_qism {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.input_joy input:hover {
+    border: 1px solid #90CEA0;
+}
+
+.input_joy input {
+    border: 1px solid #94A3B8;
+    padding: 15px 35px;
+    border-radius: 5px;
+    width: 96.5%;
+    margin: 0px 10px;
+    color: #C1E6FF;
+}
+
+textarea {
+    padding: 20px 35px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    width: 96.5%;
+}
+
+textarea:hover {
+    border: 1px solid #90CEA0;
+}
+
+.iconcha {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.iconcha img {
+    width: 35px;
+}
+
+.iconcha h1 {
+    padding: 0px 10px;
+    color: #0161FE;
+    font-size: 40px;
+}
+
+.number_qism p {
+    font-size: 18px;
+    color: #6f767d;
+    letter-spacing: 1.5px;
+}
+
+.number_qism span {
+    font-size: 17px;
+    color: #6f767d;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 80px 10%;
+}
+
+.card_img p {
+    color: #6f767d;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.card_img span {
+    font-size: 16px;
+    color: #0060FE;
+    text-align: center;
+}
+
+.card_link p {
+    color: #7a86ad;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.card_link h3 {
+    padding: 10px 0;
+}
+
+.card_button {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+}
+
+.card_button button {
+    width: 200px;
+    padding: 20px 0px;
+    border-radius: 16px;
+    background-color: #1469f4;
+    color: white;
+    border: none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.main_button i {
+    color: red;
+}
+
+.card_button button:hover {
+    background: white;
+    color: #0161FE;
+    border: 1px solid #0161FE;
+}
+
+main i {
+    display: none;
+    visibility: hidden;
+}
+
+.main_button i {
+    visibility: hidden;
+}
+
+.oxirgi_qismi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.oxirgi_1 p {
+    color: #6f767d;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.oxirgi_2 img {
+    padding: 0px 4px;
+}
+
+.salom {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    .main_title {
+        display: none;
+    }
+
+    main {
+        padding: 10px 20px;
+    }
+
+    main i {
+        font-size: 30px;
+        visibility: visible;
+    }
+
+    .main_img img {
+        width: 170px;
+    }
+
+    .main_button button {
+        padding: 20px 0px;
+    }
+
+    main {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: white;
+    }
+
+    .section_card h1,
+    p {
+        display: none;
+        
+    }
+
+    .section_button {
+        align-items: center;
+
+    }
+
+    .left_icon img {
+        display: none;
+    }
+
+    .oli_icon img {
+        display: none;
+    }
+
+    .figure_card {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+
+    .ol_card {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    }
+
+    .ol_text {
+        padding: 0px 30px;
+    }
+
+    .qollab {
+        font-size: 28px;
+    }
+
+    .biznes {
+        font-size: 28px;
+    }
+
+    .galerya {
+        font-size: 28px;
+    }
+
+    .axborot img {
+        width: 300px;
+        margin: 0px 65px;
+    }
+
+    .axborot h2 {
+        font-size: 17px;
+    }
+
+    .input_joy {
+        display: none;
+    }
+
+    .iconcha h1 {
+        font-size: 27px;
+    }
+
+    .input_qism {
+        text-align: center;
+    }
+
+    .input_qism span {
+        font-size: 21px;
+    }
+
+    .card_img span {
+        display: none;
+    }
+
+    .card_img img {
+        padding: 0px 40px;
+    }
+
+    .card_link {
+        display: none;
+    }
+
+    .card_button {
+        padding: 20px 60px;
+    }
+
+    .card_button h3 {
+        padding: 10px 0;
+    }
+
+    footer {
+        padding: 50px 10%;
+    }
+
+    .oxirgi_qismi {
+        display: flex;
+        justify-content: center;
+        padding: 1px 0px;
+    }
+
+    .qollab {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .onlay_text h1 {
+        font-size: 20px;
+    }
+
+    .iconcha span {
+        font-size: 10px;
+    }
+
+    .section_card {
+        padding: 0px 10px;
+        margin: 0px;
+    }
+
+    section {
+        padding: 0px 70px;
+    }
+
+    .img_section {
+        display: flex;
+        padding: 10px 40%;
+        flex-wrap: wrap;
+        /* gap: 20px; */
+    }
+
+    .img1 img {
+        width: 100px;
+        height: 200px;
+        border: 1px solid red;
+        display: none;
+    }
+
+    .rasm2 img {
+        display: none;
+    }
+
+    .img2 {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .rasm1 {
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+
+    .main_button {
+        display: none;
+    }
+
+}
+
+.img_section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 10%;
+    align-items: center;
+    margin: 35px;
+}
+
+.img1 img {
+    width: 527px;
+    height: 351px;
+}
+
+.img2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+}
+
+.img2 img {
+    width: 249px;
+    height: 169px;
+}
+
+.rasm1 img {
+    width: 249px;
+    height: 169px;
+}
+
+.rasm1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rasm2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px  0;
+}
+
+.rasm2 img {
+    width: 530px;
+    height: 351px;
+}
+.img_card{
+    padding: 0 10px;
+}
